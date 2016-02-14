@@ -1,4 +1,4 @@
-if test ! $(which spoof)
+if test ! $(which npm-upgrade)
 then
-  sudo npm install spoof -g
+  sudo npm install npm-upgrade -g
 fi

@@ -5,36 +5,39 @@ tap 'homebrew/bundle'
 
 brew 'ack'
 brew 'coreutils'
-brew 'go'
-brew 'grc'
+brew 'grc' # Generic Colouriser
 brew 'imagemagick'
-brew 'jp2a'
-brew 'libcaca', args: ['with-imlib2']
+brew 'jp2a' # JPG to ASCII
+brew 'libcaca', args: ['with-imlib2'] # Graphics library that outputs text instead of pixels
 brew 'libgit2'
 brew 'openssl'
-brew 'node'
+brew 'nvm'
 brew 'readline'
-brew 'postgresql'
 brew 'ruby-build'
 brew 'rbenv'
-brew 'roundup'
-brew 'spaceman-diff'
-brew 'spark'
-brew 'unrar'
-brew 'wget'
-brew 'youtube-dl'
+brew 'roundup' # kills shell eating bugs and weeds
+brew 'spaceman-diff' # Git diff for images
+brew 'spark' # Sparks graphs on cli
+brew 'tree'
+brew 'webkit2png'
+brew 'wget', args: ['with-iri']
+
+# Install more recent versions of some OS X tools.
+brew install vim --override-system-vi
+brew install homebrew/dupes/grep
+brew install homebrew/dupes/openssh
+brew install homebrew/dupes/screen
+brew install homebrew/php/php56 --with-gmp
 
 cask '1password'
-cask 'adium'
 cask 'atom'
 cask 'firefox'
-cask 'garmin-express'
 cask 'google-chrome'
-cask 'handbrake'
-cask 'mapbox-studio'
-cask 'seashore'
-cask 'slack'
-cask 'steam'
-cask 'transmission'
-cask 'tunnelbear'
+cask 'gpgtools'
+cask 'hipchat'
+cask 'phpstorm'
+cask 'poedit'
+cask 'sequel-pro'
+cask 'sketch'
+cask 'sourcetree'
 cask 'vlc'
