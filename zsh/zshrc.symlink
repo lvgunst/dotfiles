@@ -40,6 +40,7 @@ done
 
 # Load NVM
 source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR=~/.nvm
 
 # Load ZSH theme
 BULLETTRAIN_VIRTUALENV_SHOW=false
