@@ -5,13 +5,15 @@ tap 'homebrew/bundle'
 
 brew 'ack'
 brew 'coreutils'
+brew 'git'
+brew 'git-extras'
 brew 'grc' # Generic Colouriser
 brew 'imagemagick'
 brew 'jp2a' # JPG to ASCII
 brew 'libcaca', args: ['with-imlib2'] # Graphics library that outputs text instead of pixels
 brew 'libgit2'
-brew 'openssl'
 brew 'nvm'
+brew 'openssl'
 brew 'readline'
 brew 'ruby-build'
 brew 'rbenv'
@@ -19,6 +21,7 @@ brew 'roundup' # kills shell eating bugs and weeds
 brew 'spaceman-diff' # Git diff for images
 brew 'spark' # Sparks graphs on cli
 brew 'tree'
+brew 'vv'
 brew 'webkit2png'
 brew 'wget', args: ['with-iri']
 
@@ -48,6 +51,8 @@ cask 'sequel-pro'
 cask 'sketch'
 cask 'sourcetree'
 cask 'spotify'
+cask 'vagrant'
+cask 'vagrant-manager'
 cask 'virtualbox'
 cask 'virtualbox-extension-pack'
 cask 'vlc'
