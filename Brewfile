@@ -2,6 +2,9 @@ cask_args appdir: '/Applications'
 
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
+tap 'homebrew/dupes'
+tap 'homebrew/versions'
+tap 'homebrew/homebrew-php'
 
 brew 'ack'
 brew 'coreutils'
@@ -9,8 +12,6 @@ brew 'git'
 brew 'git-extras'
 brew 'grc' # Generic Colouriser
 brew 'imagemagick'
-brew 'jp2a' # JPG to ASCII
-brew 'libcaca', args: ['with-imlib2'] # Graphics library that outputs text instead of pixels
 brew 'libgit2'
 brew 'nvm'
 brew 'openssl'
@@ -26,11 +27,11 @@ brew 'webkit2png'
 brew 'wget', args: ['with-iri']
 
 # Install more recent versions of some OS X tools.
-brew install vim --override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
-brew install homebrew/php/php56 --with-gmp
+brew 'vim', args: ['override-system-vi']
+brew 'homebrew/dupes/grep'
+brew 'homebrew/dupes/openssh'
+brew 'homebrew/dupes/screen'
+brew 'homebrew/php/php56'
 
 cask '1password'
 cask 'atom'
