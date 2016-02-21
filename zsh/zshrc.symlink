@@ -38,4 +38,17 @@ do
   source $file
 done
 
+# Load NVM
+source $(brew --prefix nvm)/nvm.sh
+
+# Load ZSH theme
+BULLETTRAIN_VIRTUALENV_SHOW=false
+BULLETTRAIN_RUBY_SHOW=false
+BULLETTRAIN_GO_SHOW=false
+BULLETTRAIN_PERL_SHOW=false
+BULLETTRAIN_NVM_SHOW=true
+
+source $ZSH/zsh/git.zsh
+source $ZSH/themes/bullet-train.zsh-theme
+
 unset config_files
